@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Source Code Pro", monospace;
+    background-color: #f0f0f0; /* Fundo suave */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.contatos {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+.lista {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.lista li {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.lista .destaque {
+    font-size: 20px;
+    color: #555;
+    margin-top: 8px;
+    font-style: italic;
+}
+
+.lista .destaque a {
+    color: #0073b1; /* Cor do LinkedIn */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.lista .destaque a:hover {
+    text-decoration: underline;
+    color: #005582; /* Tom mais escuro no hover */
+}
+
+.lista li::before {
+    content: "📞"; /* Ícone decorativo */
+    font-size: 20px;
+    color: #0073b1;
+    margin-right: 8px;
+}
+
+.lista li:nth-child(2)::before {
+    content: "✉️"; /* Ícone decorativo para o email */
+}
+
+.lista li:nth-child(3)::before {
+    content: "🔗"; /* Ícone decorativo para o LinkedIn */
+}
+
+/* Estilo do botão de retorno */
+.botao-retorno {
+    cursor: pointer;
+    background-color: #0073b1;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: bold;
+    transition: 0.4s;
+    margin-top: 20px;
+}
+
+.botao-retorno:hover {
+    background-color: #005582;
+    transform: scale(105%);
+}
